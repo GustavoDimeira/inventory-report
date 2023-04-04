@@ -2,9 +2,7 @@ from datetime import datetime
 
 
 class SimpleReport:
-    @staticmethod
-    def generate(list: list):
-        most_products = list[0]["nome_da_empresa"]
+    def get_older_X_spoiling():
         older = False
         spoiling = False
         products_counter = {}
@@ -35,6 +33,13 @@ class SimpleReport:
                 products_counter[iten["nome_da_empresa"]] += 1
             else:
                 products_counter[iten["nome_da_empresa"]] = 1
+        return (older, spoiling, products_counter)
+
+    @staticmethod
+    def generate(self, list: list):
+        most_products = list[0]["nome_da_empresa"]
+
+        (older, spoiling, products_counter) = self.get_older_X_spoiling()
 
         for company in products_counter:
             if (products_counter[company] > products_counter[most_products]):
