@@ -45,36 +45,3 @@ class SimpleReport:
             Data de validade mais próxima: {spoiling}
             Empresa com mais produtos: {most_products}
         """)
-
-
-SimpleReport.generate([
-     {
-       "id": 1,
-       "nome_do_produto": "CADEIRA",
-       "nome_da_empresa": "Forces of Nature",
-       "data_de_fabricacao": "2022-04-04",
-       "data_de_validade": "2023-02-09",
-       "numero_de_serie": "FR48",
-       "instrucoes_de_armazenamento": "Conservar em local fresco"
-     },
-     {
-        "nome_da_empresa": "Forces of Nature",
-        "data_de_fabricacao": "2022-04-05",
-        "data_de_validade": "2023-02-08",
-     },
-     {
-        "nome_da_empresa": "Forces of Naturea",
-        "data_de_fabricacao": "2022-04-05",
-        "data_de_validade": "2023-02-08",
-     },
-     {
-        "nome_da_empresa": "Forces of Naturea",
-        "data_de_fabricacao": "2022-04-05",
-        "data_de_validade": "2023-02-08",
-     },
-     {
-        "nome_da_empresa": "Forces of Naturea",
-        "data_de_fabricacao": "2022-04-05",
-        "data_de_validade": "2023-02-08",
-     },
-   ])
