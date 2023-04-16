@@ -45,7 +45,7 @@ class SimpleReport():
             if (ammount[company] > ammount[most_products]):
                 most_products = company
 
-        return most_products
+        return [most_products, ammount]
 
     def generate(list: list):
         older = SimpleReport.getOlder(list)
@@ -55,5 +55,5 @@ class SimpleReport():
         return (
             f"Data de fabricação mais antiga: {older}\n"
             f"Data de validade mais próxima: {spoiling}\n"
-            f"Empresa com mais produtos: {mostProducts}"
+            f"Empresa com mais produtos: {mostProducts[0]}"
         )
