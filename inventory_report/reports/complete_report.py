@@ -2,6 +2,7 @@ from inventory_report.reports.simple_report import SimpleReport
 
 
 class CompleteReport(SimpleReport):
+    @staticmethod
     def generate(list: list):
         older = SimpleReport.getOlder(list)
         spoiling = SimpleReport.getSpoiling(list)

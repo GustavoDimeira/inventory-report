@@ -16,6 +16,7 @@ class SimpleReport():
 
         return str(older).split(" ")[0]
 
+    @staticmethod
     def getSpoiling(list):
         now = datetime.now()
         (year, month, day) = list[0]["data_de_validade"].split("-", 3)
@@ -30,6 +31,7 @@ class SimpleReport():
 
         return str(closest).split(" ")[0]
 
+    @staticmethod
     def getActive(list):
         ammount = {}
 
