@@ -1,5 +1,8 @@
-from abc import ABC
+from abc import ABC, abstractclassmethod
 
 
 class Importer(ABC):
-    pass
+    @staticmethod
+    @abstractclassmethod
+    def import_data(self, path):
+        raise NotImplementedError("Função não implementada")
