@@ -7,7 +7,7 @@ class InventoryRefactor(Iterable):
         self.importer = importer
         self.data = []
 
-    def import_data(self, path: str):
+    def import_data(self, path: str, type: str):
         for product in self.importer.import_data(path):
             self.data.extends(product)
 
