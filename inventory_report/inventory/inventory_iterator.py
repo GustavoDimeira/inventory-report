@@ -8,6 +8,6 @@ class InventoryIterator(Iterator):
 
     def __next__(self):
         if (self.cicle > len(self.data)):
-            return StopIteration()
+            raise StopIteration
         self.cicle += 1
         return self.data[self.cicle]
