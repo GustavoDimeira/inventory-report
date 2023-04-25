@@ -3,7 +3,7 @@ import csv
 
 
 class CsvImporter(Importer):
-    def import_data(path):
+    def import_data(self, path):
         if (path.endswith(".csv")):
             list = []
             with open(path) as fileRaw:
