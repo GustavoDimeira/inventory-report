@@ -10,4 +10,4 @@ class InventoryIterator(Iterator):
         if (self.cicle > len(self.data)):
             raise StopIteration
         self.cicle += 1
-        return self.data[self.cicle]
+        return self.data[self.cicle - 1]

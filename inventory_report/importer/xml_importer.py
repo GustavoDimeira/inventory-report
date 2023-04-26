@@ -3,7 +3,7 @@ import xmltodict
 
 
 class XmlImporter(Importer):
-    def import_data(self, path):
+    def import_data(path):
         if (path.endswith(".xml")):
             list = []
             with open(path) as fileRaw:

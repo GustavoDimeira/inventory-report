@@ -3,7 +3,7 @@ import json
 
 
 class JsonImporter(Importer):
-    def import_data(self, path):
+    def import_data(path):
         if (path.endswith(".json")):
             list = []
             with open(path) as fileRaw:
